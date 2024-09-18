@@ -12,7 +12,7 @@ document.getElementById("btn_login").addEventListener("click", function (event) 
     // password and num validation check
     if(phoneNumber === '5' && pinNumber === '1234'){
         console.log('You are loged In');
-        window.location.href = '/home.html'
+        window.location.href = 'payoo_project/home.html'
     }
     else{
         alert('Please input correct NUM or PIN !')
