@@ -22,6 +22,14 @@ document.getElementById('add_Money_Btn').addEventListener('click', function(even
 
         //update the balance in UI
         document.getElementById('account_balance').innerText = newBalance;
+
+        // add to transaction history
+        const p = document.createElement('p');
+        p.innerText = `Added: ${addAmountInput} tk. New Balance: ${newBalance}`
+        console.log(p)
+
+        // added in UI
+        document.getElementById('transaction_container').appendChild(p);
     }
 
 

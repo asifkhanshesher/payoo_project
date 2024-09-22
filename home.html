@@ -25,8 +25,9 @@
 
                 <!-- user action button -->
                  <div>
-                        <button class="btn btn-lg">Add Money</button>
-                        <button class="btn btn-lg">Cash Out</button>
+                        <button id="btn_show_add_money" class="btn btn-lg">Add Money</button>
+                        <button id="btn_show_cash_out" class="btn btn-lg">Cash Out</button>
+                        <button id="btn_transaction" class="btn btn-lg">Transaction</button>
                  </div>
 
                  <div class="divider"></div>
@@ -34,7 +35,7 @@
                  <!-- user action button -->
 
                  <!-- add amount from start -->
-                 <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                 <div id="add_money_form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -50,14 +51,14 @@
                         
                       </div>
                       <div class="form-control mt-6">
-                        <button id="add_Money_Btn" class="btn btn-primary">Add Money</button>
+                        <button id="add_Money_Btn" class="btn btn-success">Add Money</button>
                       </div>
                     </form>
                   </div>
                  <!-- add amount from end -->
 
                  <!-- cash Out start -->
-                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                 <div id="cash_out_form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                   <form class="card-body">
                     <div class="form-control">
                       <label class="label">
@@ -73,11 +74,19 @@
                       
                     </div>
                     <div class="form-control mt-6">
-                      <button id="btn_cash_out" class="btn btn-primary">Cash Out</button>
+                      <button id="btn_cash_out" class="btn btn-error">Cash Out</button>
                     </div>
                   </form>
                 </div>
                  <!-- cash Out end -->
+
+
+                 <!-- transaction start -->
+                 <div id="add_transaction" class="hidden">
+                  <h1 class="text-3xl text-center">Transaction History</h1>
+                  <div id="transaction_container"></div>
+                 </div>
+                 <!-- transaction end -->
 
 
 
@@ -87,5 +96,10 @@
     </main>
     <script src="js/home.js"></script>
     <script src="js/cashout.js"></script>
+    <!-- <script src="js/function.js"></script> -->
+    <script src="js/utilities.js"></script>
+    <script src="js/feature.js"></script>
+    
+    
 </body>
 </html>

@@ -16,6 +16,15 @@ document.getElementById('btn_cash_out').addEventListener('click', function(event
         
         // added new Balance in UI
         document.getElementById('account_balance').innerText = newBalance;
+
+
+        // add to transaction history
+        const p = document.createElement('p');
+        p.innerText = `Cash Out: ${cashOutNumber} tk. New Balance: ${newBalance}`
+        console.log(p)
+
+        // added in UI
+        document.getElementById('transaction_container').appendChild(p);
     }
     else{
         alert('Please insert correct PIN!')
